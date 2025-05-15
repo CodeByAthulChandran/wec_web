@@ -4,7 +4,7 @@ import React from 'react'
 
 function Service() {
     return (
-        <section className='py-8 min-h-screen'>
+        <section className='pt-8 pb-40'>
             <div className="container">
                 <div className="text-center border-b border-white">
                     <h2 className='text-center font-impact text text-[326px] leading-none  tracking-[10px] group'>
