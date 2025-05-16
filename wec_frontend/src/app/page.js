@@ -1,3 +1,4 @@
+import Faq from "@/components/home/faq/Faq";
 import Hero from "@/components/home/hero/Hero";
 import OurServices from "@/components/home/our-services/OurServices";
 import Review from "@/components/home/review/Review";
@@ -12,6 +13,7 @@ export default function Home() {
         <Service/>
         <OurServices/>
         <WhyChooseUs/>
+        <Faq/>  
     </>
   );
 }
