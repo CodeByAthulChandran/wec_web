@@ -1,0 +1,23 @@
+/* testimonial.css */
+
+@keyframes scroll-logos {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-track {
+    width: max-content;
+    animation: scroll-logos 20s linear infinite;
+}
+
+.clients_logo:hover .logo-track {
+    animation-play-state: paused;
+}
+
+.logo-item {
+    flex-shrink: 0;
+}

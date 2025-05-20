@@ -12,13 +12,12 @@ function Faq() {
 
     const faqData = [
         {
-            question: "What services do you provide?",
-            answer:
-                "We provide a range of web development and branding services tailored to your business needs.",
+            question: "What is lorem ipsum?",
+            answer: "Yes, we offer ongoing support and maintenance packages.",
         },
         {
-            question: "How long does a project take?",
-            answer: "It depends on the scope, but typically we deliver within 2–4 weeks.",
+            question: "What is lorem ipsum?",
+            answer: "Yes, we offer ongoing support and maintenance packages.",
         },
         {
             question: "What is lorem ipsum?",
@@ -35,7 +34,7 @@ function Faq() {
     ];
 
     return (
-        <section className="w-full py-6 relative overflow-hidden">
+        <section className="w-full py-10 relative overflow-hidden">
             {/* Background video */}
             <video
                 autoPlay

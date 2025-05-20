@@ -9,7 +9,7 @@ function OurServices() {
             description: "Lorem Ipsum is simply dummy text of the printing",
         },
         {
-            title: "Branding & Identitiy",
+            title: "Branding & Identity",
             description: "Lorem Ipsum is simply dummy text of the printing",
         },
         {
@@ -54,9 +54,14 @@ function OurServices() {
         }
     ]
     return (
-        <section className='min-h-screen pt-8   pb-40'>
-            <div className="container ">
-                <div className="pb-10">
+        <section className='min-h-screen pt-8 pb-40'>
+            <div className="relative">
+
+                <div className="absolute top-[400px] -left-[500px] w-[1000px] h-[1200px] rounded-full z-[-1] opacity-50 blur-[80px] bg-[radial-gradient(circle,_#1020A6_0%,_transparent_100%)]"></div>
+
+                <div className="absolute bottom-0 -right-[500px] w-[1000px] h-[1200px] rounded-full z-[-1] opacity-50 blur-[80px] bg-[radial-gradient(circle,_#1020A6_0%,_transparent_100%)]"></div>
+
+                <div className="container pb-10">
                     <h1 className='text-[100px] -tracking-[5px] leading-[1.1] font-[300]'>
                         <span className='uppercase font-workSans text-white'>
                             Empowering Efficiency
@@ -68,19 +73,19 @@ function OurServices() {
                 </div>
 
                 {/* services list from 1 to 6 */}
-                <div className="service-lists pt-20">
+                <div className="service-lists pt-20  overflow-hidden">
                     {
                         services.slice(0, 6).map((service, index) => {
                             const isReversed = Math.floor(index / 3) % 2 !== 0;
                             const isEven = index % 2 === 0;
-                            const bgColor = isEven ? 'bg-[#FCA311]' : 'bg-white';
+                            const bgColor = isEven ? 'bg-[#FCA311]' : 'bg-[#FFF5DE]';
                             return (
-                                <div className="relative group overflow-hidden">
+                                <div key={index} className="relative group overflow-hidden">
                                     {/* background overlay that slides in */}
                                     <div className={`absolute top-0 ${isReversed ? 'left-0' : 'right-0'} w-0 group-hover:w-full h-full ${bgColor} transition-all duration-500 ease-in-out z-0`}></div>
 
                                     <div className={`service relative z-10 flex ${isReversed ?
-                                        'flex-row-reverse' : 'flex-row'} justify-between items-center py-6 px-4 border-b border-[#4D4D4D] text-white group-hover:text-black transition-colors duration-500`}>
+                                        'flex-row-reverse' : 'flex-row'} justify-between items-center py-6 px-10 border-b border-[#4D4D4D] text-white group-hover:text-black transition-colors duration-500`}>
 
                                         <div className={`flex  ${isReversed ? 'justify-end text-end' : 'justify-start text-start'}`}>
                                             <p className="font-workSans max-w-[70%]">
@@ -96,7 +101,7 @@ function OurServices() {
                     }
                 </div>
 
-                <div className="hero-section flex items-center justify-center w-full pt-40 pb-20">
+                <div className="hero-section container flex items-center justify-center w-full pt-40 pb-20 select-none">
                     <div className="hero-container relative w-[80%] bg-[#FFF5DE] rounded-[35px] h-[450px] ">
                         <div className="title pt-10">
                             <h1 className="flex flex-col leading-none ps-20 tracking-[-2px]">
@@ -130,9 +135,9 @@ function OurServices() {
                         services.slice(6, 12).map((service, index) => {
                             const isReversed = Math.floor(index / 3) % 2 !== 0;
                             const isEven = index % 2 === 0;
-                            const bgColor = isEven ? 'bg-[#FCA311]' : 'bg-white';
+                            const bgColor = isEven ? 'bg-[#FCA311]' : 'bg-[#FFF5DE]';
                             return (
-                                <div className="relative group overflow-hidden">
+                                <div key={index} className="relative group overflow-hidden">
                                     {/* background overlay that slides in */}
                                     <div className={`absolute top-0 ${isReversed ? 'left-0' : 'right-0'} w-0 group-hover:w-full h-full ${bgColor} transition-all duration-500 ease-in-out z-0`}></div>
 
